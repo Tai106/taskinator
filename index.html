@@ -28,17 +28,22 @@
                 </select>
             </div>
             <div class="form-group">
-                <button class="btn" id="save-task">Add Task</button>   
+                <button class="btn" id="save-task" type="submit">Add Task</button>   
             </div>
         </form>
      </header>
 
-    <main class="page-content">
+    <main class="page-content" id="page-content">
+        <!-- Task To Do -->
         <section class="task-list-wrapper">
             <h2 class="list-title">Tasks To Do</h2>
-            <ul class="task-list" id="tasks-to-do">
-                <li class="task-item">A task is going to be added soon!</li>
-            </ul>
+            <ul class="task-list" id="tasks-to-do"></ul>
+        </section>
+
+        <!-- Task In Progress -->
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Task in Progress</h2>
+            <ul class="task-list" id="tasks-in-progress"></ul>
         </section>
     </main>
 
@@ -46,8 +51,7 @@
         &copy;2020 by Taskinator
     </footer>
     
-
-    <script src="./assets/js/script.js"></script>
+   <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
